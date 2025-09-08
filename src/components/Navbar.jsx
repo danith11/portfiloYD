@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "About Me", path: "/About" },
+    { name: "Projects", path: "/Projects" },
+    { name: "Contact", path: "/Contact" },
+  ];
   return (
     <div className="flex justify-between z-999 overflow-hidden fixed w-full items-center px-6 md:px-16 lg:px-36 py-5 ">
       <div className="cursor-pointer">
@@ -11,20 +18,15 @@ const Navbar = () => {
       </div>
 
       <div className="flex flex-col gap-20 items-center cursor-pointer sm:flex-row">
-        <a className="font-semibold text-xl" href="#home">
-          Home
-        </a>
-        <a className="font-semibold text-xl" href="#about-me">
-          About me
-        </a>
-
-        <a className="font-semibold text-xl" href="#projects">
-          Projects
-        </a>
-
-        <a className="font-semibold text-xl" href="#contact">
-          Contacts
-        </a>
+        {navLinks.map((item, index) => (
+          <Link
+            key={index}
+            href={item.path}
+            className="text-white hover:text-cyan-500 duration-300 transition-colors ease-in-out"
+          >
+            {item.name}
+          </Link>
+        ))}
       </div>
     </div>
   );
