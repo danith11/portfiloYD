@@ -19,13 +19,13 @@ const Navbar = () => {
 
       <div className="flex flex-col gap-20 items-center cursor-pointer sm:flex-row">
         {navLinks.map((item, index) => (
-          <Link
+          <a
             key={index}
             href={item.path}
-            className="text-white hover:text-cyan-500 duration-300 transition-colors ease-in-out"
+            className="text-white hover:text-slate-300 duration-300 transition-colors ease-in-out"
           >
             {item.name}
-          </Link>
+          </a>
         ))}
       </div>
     </div>
