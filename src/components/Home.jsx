@@ -7,7 +7,6 @@ const Home = () => {
       <div className="flex-1">
         <p className="text-6xl font-medium mb-5">Full-Stack / Web Developer</p>
 
-        {/* Reserve space so layout won’t shift */}
         <div className="min-h-[60px]">
           <TypeWriter
             options={{
@@ -17,7 +16,7 @@ const Home = () => {
               autoStart: true,
               loop: true,
               delay: 75,
-              cursor: "", // hide cursor
+              cursor: "", 
             }}
           />
         </div>
@@ -35,7 +34,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Image */}
       <div className="flex-1 flex justify-center">
         <img
           src="/src/assets/boy.jpg"
