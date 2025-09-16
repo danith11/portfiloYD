@@ -3,7 +3,7 @@ import TypeWriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <div className="flex items-center justify-between gap-10 p-50">
+    <div className="flex items-center justify-between gap-10 px-50 pt-50">
       <div className="flex-1">
         <p className="text-6xl font-medium mb-5">Full-Stack / Web Developer</p>
 
