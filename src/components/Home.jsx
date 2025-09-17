@@ -1,9 +1,12 @@
 import React from "react";
 import TypeWriter from "typewriter-effect";
+import BlurCircle from "./BlurCircle";
 
 const Home = () => {
   return (
     <div className="flex items-center justify-between gap-10 px-50 pt-50">
+      <BlurCircle top="150px" left="100px" />
+
       <div className="flex-1">
         <p className="text-6xl font-medium mb-5">Full-Stack / Web Developer</p>
 
@@ -16,7 +19,7 @@ const Home = () => {
               autoStart: true,
               loop: true,
               delay: 75,
-              cursor: "", 
+              cursor: "",
             }}
           />
         </div>
@@ -29,8 +32,12 @@ const Home = () => {
         </p>
 
         <div className="flex gap-4 my-5">
-          <button className="p-5 px-10 bg-slate-800 rounded-4xl text-slate-200 cursor-pointer hover:scale-102 duration-200 hover:text-slate-50">My Projects</button>
-          <button className="p-5 px-10 bg-slate-800 rounded-4xl text-slate-200 cursor-pointer hover:scale-102 duration-200 hover:text-slate-50">Download CV</button>
+          <button className="p-5 px-10 bg-slate-800 rounded-4xl text-slate-200 cursor-pointer hover:scale-102 duration-200 hover:text-slate-50">
+            My Projects
+          </button>
+          <button className="p-5 px-10 bg-slate-800 rounded-4xl text-slate-200 cursor-pointer hover:scale-102 duration-200 hover:text-slate-50">
+            Download CV
+          </button>
         </div>
       </div>
 
