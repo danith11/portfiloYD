@@ -9,7 +9,7 @@ const Projects = () => {
         <p className="text-4xl font-bold text-center mb-10">Projects</p>
               <BlurCircle right="50px"/>
 
-        <ProjectCard />{" "}
+        <ProjectCard/>{" "}
       </div>
     </div>
   );
