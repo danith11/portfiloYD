@@ -7,9 +7,9 @@ const Projects = () => {
     <div className="px-50 mt-20">
       <div>
         <p className="text-4xl font-bold text-center mb-10">Projects</p>
-              <BlurCircle right="50px"/>
-
-        <ProjectCard/>{" "}
+        <BlurCircle right="50px" />
+        <BlurCircle bottom="-2000px" left="50px" />
+        <ProjectCard />{" "}
       </div>
     </div>
   );

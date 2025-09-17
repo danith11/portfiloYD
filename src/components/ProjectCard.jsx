@@ -22,6 +22,19 @@ const ProjectCard = () => {
         "An E commerce web site is an online platform that facilates the buying and selling of products or services over internet.It serves as a virtual market place for those individuals",
       tech: ["ReactJS", "ExpressJS", "Tailwind CSS", "MongoDB", "JWT"],
     },
+    {
+      name: "QuickShow",
+      description:
+        "A user-friendly web application for booking movie tickets online. Browse movies, select showtimes, choose seats, and make secure payments with ease. Built with modern web technologies, this app offers a seamless experience for movie enthusiasts to plan their cinema visits effortlessly",
+      tech: [
+        "ReactJS",
+        "ExpressJS",
+        "Tailwind CSS",
+        "TMDB API",
+        "Clerk Auth",
+        "MongoDB",
+      ],
+    },
   ];
 
   return (
