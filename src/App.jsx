@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import TechStack from "./components/TechStack";
 import About from "./components/About";
+import Projects from "./components/Projects";
+
 
 const App = () => {
   return (
@@ -12,6 +14,7 @@ const App = () => {
       <Home/>
       <TechStack/>
       <About/>
+      <Projects/>
       <Footer/>
     </>
   );

@@ -2,7 +2,11 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <div className='px-50 mt-20'>
+      <div>
+        <p>Projects</p>
+      </div>
+    </div>
   )
 }
 
