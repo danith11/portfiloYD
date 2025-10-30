@@ -18,7 +18,7 @@ const TechStack = () => {
     <div className="px-50 mt-30">
       <div className="flex flex-col justify-center items-center">
         <p className="font-bold text-4xl ">Tech Stack</p>
-        <div className="flex gap-10 mt-10">
+        <div className="flex flex-wrap  gap-10 mt-10">
           {images.map((item, index) => (
             <img
               key={index}
