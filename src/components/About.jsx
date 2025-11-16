@@ -1,5 +1,6 @@
 import React from "react";
 import EducationCard from "./EducationCard";
+import CurrentExplorations from "./CurrentExplorations";
 
 const About = () => {
   return (
@@ -20,13 +21,13 @@ const About = () => {
           new technologies, and building projects that make an impact.
         </p>
       </div>
-      <div>
-        <div>
+      <div className="mt-10">
           <p className="text-3xl font-bold">Education</p>
-        </div>
-        <div>
           <EducationCard />
-        </div>
+      </div>
+      <div className="mt-14">
+          <p className="text-3xl font-bold">Current Explorations</p>
+          <CurrentExplorations />
       </div>
     </div>
   );
