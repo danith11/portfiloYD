@@ -23,7 +23,7 @@ const EducationCard = () => {
         {education.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col flex-wrap border-1 border-slate-300 rounded-xl p-2 my-5 hover:shadow-2xl transition-all duration-400 hover:border-none" 
+            className="flex flex-col flex-wrap border-1 border-slate-300 rounded-xl p-2 my-5 hover:shadow-2xl transition-all duration-400"
           >
             <p className="text-lg font-medium">{item.name}</p>
             <div className="flex">

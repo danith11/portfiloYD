@@ -1,6 +1,7 @@
 import React from "react";
 import EducationCard from "./EducationCard";
 import CurrentExplorations from "./CurrentExplorations";
+import PersonalInterests from "./PersonalInterests";
 
 const About = () => {
   return (
@@ -28,6 +29,10 @@ const About = () => {
       <div className="mt-14">
           <p className="text-3xl font-bold">Current Explorations</p>
           <CurrentExplorations />
+      </div>
+      <div className="mt-14">
+          <p className="text-3xl font-bold">Personal Interests</p>
+          <PersonalInterests />
       </div>
     </div>
   );
