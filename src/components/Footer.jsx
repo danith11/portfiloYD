@@ -59,13 +59,13 @@ const Footer = () => {
         <div>
           <p className="text-2xl font-bold">Connect</p>
           <div className="flex flex-row gap-3 mt-5">
-            <a href="">
+            <a href="https://github.com/danith11">
               <FaGithub />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/ydanith/">
               <FaLinkedin />
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/yethum.danith">
               <FaFacebook />
             </a>
           </div>

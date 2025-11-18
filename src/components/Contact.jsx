@@ -10,9 +10,9 @@ const Contact = () => {
   return (
     <>
       <div className="px-5 md:px-30 sm:px-50 py-20 ">
-        <BlurCircle top="100px"  right="100px"/>
+        <BlurCircle top="100px" right="100px" />
         <div className="flex flex-col items-center justify-center text-center">
-          <MdLocalPostOffice className="w-20 h-20" color="#1e293b"/>
+          <MdLocalPostOffice className="w-20 h-20" color="#1e293b" />
           <p className="text-2xl font-bold">Get In Touch</p>
           <div className="w-20 border-2 mt-5"></div>
           <p className="text-md font-light mt-5">
@@ -104,27 +104,34 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          
+
           <div className="flex flex-col w-full md:w-1/2 px-10 gap-4">
             <div className="flex flex-col w-full gap-4 items-center">
               <p className="text-xl font-bold">Explore My Work and Presence</p>
               <div className="p-5 w-1/2 bg-black text-white text-center rounded-xl font-medium hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div>
-                  <FaGithub className="w-full mb-2"/>
-                  <p>GitHub</p>
-                </div>
+                <a href="https://github.com/danith11">
+                  <div>
+                    <FaGithub className="w-full mb-2" />
+                    <p>GitHub</p>
+                  </div>
+                </a>
               </div>
               <div className="p-5 w-1/2 bg-blue-600 text-white text-center rounded-xl font-medium hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div>
-                  <FaLinkedin className="w-full mb-2"/>
-                  <p>LinkedIn</p>
-                </div>
+                <a href="https://www.linkedin.com/in/ydanith/">
+                  <div>
+                    <FaLinkedin className="w-full mb-2" />
+                    <p>LinkedIn</p>
+                  </div>
+                </a>
               </div>
+
               <div className="p-5 w-1/2 bg-blue-400 text-white text-center rounded-xl font-medium hover:scale-105 transition-all duration-300 cursor-pointer">
-                <div>
-                  <FaKaggle className="w-full mb-2"/>
-                  <p>Kaggle</p>
-                </div>
+                <a href="https://www.kaggle.com/yethumdanith">
+                  <div>
+                    <FaKaggle className="w-full mb-2" />
+                    <p>Kaggle</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
