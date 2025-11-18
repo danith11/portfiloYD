@@ -4,6 +4,7 @@ import BlurCircle from "./BlurCircle";
 import TechStack from "./TechStack";
 import Projects from "./Projects";
 import Footer from "./Footer";
+import boyimage from "/src/assets/boy.jpeg"
 // import resume from "../public/myCV.pdf"
 
 const Home = () => {
@@ -50,7 +51,7 @@ const Home = () => {
 
         <div className="lg:flex-1 flex justify-center items-center">
           <img
-            src="/src/assets/boy.jpeg"
+            src={boyimage}
             alt="boy"
             className="rounded-full w-72 h-72 md:w-80 md:h-80 object-cover shadow-lg"
           />
@@ -58,7 +59,6 @@ const Home = () => {
       </div>
       <TechStack />
       <Projects />
-      <Footer />
     </div>
   );
 };
