@@ -9,7 +9,7 @@ import Footer from "./Footer";
 const Home = () => {
   return (
     <div>
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-10 px-6 md:px-16 lg:px-36 pt-28 md:pt-36">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-10 md:px-16 pt-28 md:pt-36">
         <BlurCircle top="150px" left="100px" />
 
         <div className="lg:flex-1">

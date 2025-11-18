@@ -4,11 +4,13 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaKaggle } from "react-icons/fa";
 import Footer from "./Footer";
+import BlurCircle from "./BlurCircle";
 
 const Contact = () => {
   return (
     <>
-      <div className="px-5 md:px-30 sm:px-50 py-20 bg-blue-50 ">
+      <div className="px-5 md:px-30 sm:px-50 py-20 ">
+        <BlurCircle top="100px"  right="100px"/>
         <div className="flex flex-col items-center justify-center text-center">
           <MdLocalPostOffice className="w-20 h-20" color="#1e293b"/>
           <p className="text-2xl font-bold">Get In Touch</p>

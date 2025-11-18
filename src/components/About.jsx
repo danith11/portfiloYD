@@ -2,10 +2,12 @@ import React from "react";
 import EducationCard from "./EducationCard";
 import CurrentExplorations from "./CurrentExplorations";
 import PersonalInterests from "./PersonalInterests";
+import BlurCircle from "./BlurCircle";
 
 const About = () => {
   return (
-    <div className="px-5 md:px-30 sm:px-50 py-20 bg-blue-50">
+    <div className="px-5 md:px-30 sm:px-50 py-20">
+      <BlurCircle top="150px" right="20px" />
       <p className="text-4xl font-bold text-center">About Me</p>
       <div className="mt-5 text-lg font-light flex flex-col gap-6 text-slate-600 max-w-2xl text-center mx-auto">
         <p>
@@ -23,17 +25,18 @@ const About = () => {
         </p>
       </div>
       <div className="mt-10">
-          <p className="text-3xl font-bold">Education</p>
-          <EducationCard />
+        <p className="text-3xl font-bold">Education</p>
+        <EducationCard />
       </div>
       <div className="mt-14">
-          <p className="text-3xl font-bold">Current Explorations</p>
-          <CurrentExplorations />
+        <p className="text-3xl font-bold">Current Explorations</p>
+        <CurrentExplorations />
       </div>
       <div className="mt-14">
-          <p className="text-3xl font-bold">Personal Interests</p>
-          <PersonalInterests />
+        <p className="text-3xl font-bold">Personal Interests</p>
+        <PersonalInterests />
       </div>
+      <BlurCircle bottom="150px" left="20px" />
     </div>
   );
 };

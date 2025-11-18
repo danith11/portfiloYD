@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <div className="p-24 flex flex-col md:flex-row justify-between ">
+      <div className="p-24 flex flex-col md:flex-row justify-between bg-gradient-to-b from-slate-50 to-slate-400 border-t-2 border-blue-100">
         <div>
           <p className="text-2xl font-bold">Get In Touch</p>
           <div className="flex flex-row gap-2 mt-5">
