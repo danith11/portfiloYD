@@ -13,7 +13,7 @@ const Home = () => {
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-10 md:px-16 pt-28 md:pt-36">
         <BlurCircle top="150px" left="100px" />
 
-        <div className="lg:flex-1">
+        <div className="lg:flex-1 px-2 sm:px-0">
           <p className="text-4xl md:text-6xl font-medium mb-5">
             Full-Stack / Web Developer
           </p>
@@ -32,14 +32,14 @@ const Home = () => {
             />
           </div>
 
-          <p className="mt-4 text-m text-slate-800 max-w-xl">
+          <p className="mt-4 text-m text-slate-800 max-w-xl px-2 sm:p-0">
             A passionate Full-Stack Web Developer and lifelong learner who loves
             building clean, user-friendly, and impactful web applications. I
             enjoy turning ideas into reality through code and continuously
             exploring new technologies to grow as a developer.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 my-5">
+          <div className="flex flex-row gap-4 my-5 items-center justify-center">
             <button className="py-3 px-6 bg-slate-800 rounded-xl text-slate-200 cursor-pointer hover:scale-102 duration-200 hover:text-slate-50">
               My Projects
             </button>
