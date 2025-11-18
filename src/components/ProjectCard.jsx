@@ -1,5 +1,4 @@
 // ProjectCard.js - Corrected
-
 import React from "react";
 
 const ProjectCard = () => {
@@ -17,12 +16,14 @@ const ProjectCard = () => {
         "Sequilize",
         "Zoom API",
       ],
+      link: "https://github.com/danith11/EDWin-web",
     },
     {
       name: "Forever E-commerce",
       description:
         "An E commerce web site is an online platform that facilates the buying and selling of products or services over internet.It serves as a virtual market place for those individuals",
       tech: ["ReactJS", "ExpressJS", "Tailwind CSS", "MongoDB", "JWT"],
+      link: "https://github.com/danith11/forever-ECommerce",
     },
     {
       name: "QuickShow",
@@ -36,6 +37,7 @@ const ProjectCard = () => {
         "Clerk Auth",
         "MongoDB",
       ],
+      link: "https://github.com/danith11/QuickShow",
     },
   ];
 
@@ -60,6 +62,9 @@ const ProjectCard = () => {
               </li>
             ))}
           </ul>
+          <button className="text-slate-600 cursor-pointer">
+            <a href={project.link}>View Project</a>
+          </button>
         </div>
       ))}
     </div>
