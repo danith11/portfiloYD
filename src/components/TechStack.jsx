@@ -26,7 +26,7 @@ const TechStack = () => {
   ];
 
   return (
-    <div className="px-20 mt-30 mb-30">
+    <div className="px-20 mt-30 mb-20">
       <div className="flex flex-col justify-center items-center">
         <p className="font-bold text-4xl">Tech Stack</p>
         <div className="flex flex-wrap gap-10 mt-10">
@@ -45,7 +45,6 @@ const TechStack = () => {
 };
 
 export default TechStack;
-
 
 // import React from "react";
 
