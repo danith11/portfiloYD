@@ -1,20 +1,77 @@
 import React from "react";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="pt-20">
-      <div className="bg-slate-700 p-30">
-        <p>Yethum Danith @ 2025.All rights are reserved</p>
-        <div className="flex mt-5">
-          <a href="https://github.com/danith11">
-            <img className="w-10 hover:scale-110 duration-200" src="src/assets/github.png" alt="github logo" />
-          </a>
-          <a href="https://www.linkedin.com/in/yethum-danith-590659252/">
-            <img className="w-10 hover:scale-110 duration-200" src="src/assets/linkdin.png" alt="linkdIn logo" />
-          </a>
+    <>
+      <div className="p-24 flex flex-col md:flex-row justify-between ">
+        <div>
+          <p className="text-2xl font-bold">Get In Touch</p>
+          <div className="flex flex-row gap-2 mt-5">
+            {" "}
+            <BiLogoGmail />
+            <p className="font-light">yethumdanith2002@gmail.com</p>
+          </div>
+          <p className="font-light">
+            Feel free to reach out for collaborations or just a friendly hello
+          </p>
+        </div>
+        <div>
+          <p className="text-2xl font-bold">Quick Links</p>
+          <ul className="mt-5">
+            <li>
+              <a
+                className="font-light hover:font-medium transition-all duration-500"
+                href="/"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                className="font-light hover:font-medium transition-all duration-500"
+                href="/about"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                className="font-light hover:font-medium transition-all duration-500"
+                href="/projects"
+              >
+                Project
+              </a>
+            </li>
+            <li>
+              <a
+                className="font-light hover:font-medium transition-all duration-500"
+                href="/contact"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p className="text-2xl font-bold">Connect</p>
+          <div className="flex flex-row gap-3 mt-5">
+            <a href="">
+              <FaGithub />
+            </a>
+            <a href="">
+              <FaLinkedin />
+            </a>
+            <a href="">
+              <FaFacebook />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

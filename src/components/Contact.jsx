@@ -3,13 +3,14 @@ import { MdLocalPostOffice } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaKaggle } from "react-icons/fa";
+import Footer from "./Footer";
 
 const Contact = () => {
   return (
     <>
       <div className="px-5 md:px-30 sm:px-50 py-20 bg-blue-50 ">
         <div className="flex flex-col items-center justify-center text-center">
-          <MdLocalPostOffice className="w-20 h-20" />
+          <MdLocalPostOffice className="w-20 h-20" color="#1e293b"/>
           <p className="text-2xl font-bold">Get In Touch</p>
           <div className="w-20 border-2 mt-5"></div>
           <p className="text-md font-light mt-5">
@@ -81,7 +82,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="flex items-center justify-center gap-1 mt-5 bg-indigo-500 hover:bg-indigo-600 text-white py-2.5 w-full rounded-full transition"
+                  className="flex items-center justify-center gap-1 mt-5 bg-slate-800 hover:bg-slate-600 text-white py-2.5 w-full rounded-full transition"
                 >
                   Send Message
                   <svg
@@ -127,6 +128,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
