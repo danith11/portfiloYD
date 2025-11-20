@@ -4,7 +4,7 @@ import BlurCircle from "./BlurCircle";
 
 const Projects = () => {
   return (
-    <div className="px=10 sm:px-30 mb-2">
+    <div className="p-2 sm:mx-30 mb-2">
       <div className="items-center text-center">
         <p className="text-4xl font-bold text-center mb-10">Projects</p>
         <BlurCircle right="50px" />
