@@ -1,12 +1,38 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { MdLocalPostOffice } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaKaggle } from "react-icons/fa";
-import Footer from "./Footer";
 import BlurCircle from "./BlurCircle";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+    // console.log(import.meta.env.VITE_SERVICE_ID);
+    // console.log(import.meta.env.VITE_TEMPLATE_ID);
+    // console.log(import.meta.env.VITE_PUBLIC_KEY);
+  };
   return (
     <>
       <div className="px-5 md:px-30 sm:px-50 py-20 ">
@@ -22,7 +48,10 @@ const Contact = () => {
         </div>
         <div className="flex flex-col md:flex-row mt-15 items-center justify-center">
           <div className="w-full md:w-1/2 bg-white p-5 rounded-lg hover:shadow-2xl ">
-            <form className="flex flex-col items-center text-sm text-slate-800">
+            <form
+              className="flex flex-col items-center text-sm text-slate-800"
+              onSubmit={sendEmail}
+            >
               <div className="w-full px-4">
                 <label htmlFor="name" className="font-medium">
                   Full Name
@@ -45,6 +74,7 @@ const Contact = () => {
                     className="h-full px-2 w-full outline-none bg-transparent"
                     placeholder="Enter your full name"
                     required
+                    name="user_name"
                   />
                 </div>
 
@@ -69,6 +99,7 @@ const Contact = () => {
                     className="h-full px-2 w-full outline-none bg-transparent"
                     placeholder="Enter your email address"
                     required
+                    name="user_email"
                   />
                 </div>
 
@@ -80,6 +111,7 @@ const Contact = () => {
                   className="w-full mt-2 p-2 bg-transparent border border-slate-300 rounded-lg resize-none outline-none focus:ring-2 focus-within:ring-indigo-400 transition-all"
                   placeholder="Enter your message"
                   required
+                  name="message"
                 ></textarea>
 
                 <button

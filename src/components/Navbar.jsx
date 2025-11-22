@@ -16,7 +16,6 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
       <div className="flex justify-between items-center px-6 md:px-16 lg:px-36 py-5">
         
-        {/* Logo */}
         <Link
           to="/"
           onClick={() => {
@@ -28,7 +27,6 @@ const Navbar = () => {
           Yethum Danith
         </Link>
 
-        {/* Desktop Menu */}
         <div className="hidden sm:flex gap-10 items-center">
           {navLinks.map((item, index) => (
             <Link
@@ -42,7 +40,6 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           className="sm:hidden text-3xl text-black"
           onClick={() => setIsOpen(!isOpen)}
@@ -51,7 +48,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
       {isOpen && (
         <div className="sm:hidden flex flex-col bg-white shadow-md px-6 pb-4 gap-4">
           {navLinks.map((item, index) => (
