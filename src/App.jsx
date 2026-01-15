@@ -4,8 +4,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
-import Projects from "./components/Projects";
+import Project from "./components/Project";
 import Contact from "./components/Contact";
+// import ChatBot from "./components/ChatBox";
 
 const App = () => {
   return (
@@ -22,10 +23,13 @@ const App = () => {
           }
         />
         <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<Project />} />
         <Route path="/contact" element={<Contact />} />{" "}
       </Routes>
+              {/* <ChatBot/> */}
+
       <Footer/>
+
     </BrowserRouter>
   );
 };

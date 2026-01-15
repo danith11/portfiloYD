@@ -49,6 +49,7 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row mt-15 items-center justify-center">
           <div className="w-full md:w-1/2 bg-white p-5 rounded-lg hover:shadow-2xl ">
             <form
+              ref={form}
               className="flex flex-col items-center text-sm text-slate-800"
               onSubmit={sendEmail}
             >
