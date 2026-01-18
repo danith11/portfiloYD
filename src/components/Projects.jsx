@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="items-center text-center">
         <p className="text-4xl font-bold text-center mb-10">Projects</p>
         <BlurCircle right="50px" />
-        <ProjectCard />{" "}
+        <ProjectCard limit={3} />{" "}
         <button className="py-3 px-6 bg-slate-800 rounded-xl text-slate-200 cursor-pointer hover:scale-102 duration-200 hover:text-slate-50 ">
           <a href="/projects">See All Projects</a>
         </button>
