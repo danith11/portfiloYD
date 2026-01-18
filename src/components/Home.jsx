@@ -61,8 +61,9 @@ const Home = () => {
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="lg:flex-1 flex justify-center items-center"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
+          className="lg:flex-1 flex justify-center items-center overflow-hidden "
         >
           <img
             src={boyimage}
