@@ -5,12 +5,13 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import Project from "./components/Project";
-import Contact from "./components/Contact";
-// import ChatBot from "./components/ChatBox";
+import Contact from "./components/Contact";// import ChatBot from "./components/ChatBox";
+import SmoothFollower from "./components/SmootheFollower";
 
 const App = () => {
   return (
     <BrowserRouter>
+    <SmoothFollower/>
       <Navbar />
 
       <Routes>

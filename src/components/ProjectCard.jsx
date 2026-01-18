@@ -74,7 +74,7 @@ const ProjectCard = ({ limit }) => {
             />
           </div>
 
-          <div className="absolute inset-0 bg-slate-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6">
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-400 to-slate-800 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6">
             <h3 className="text-2xl font-bold text-white mb-3">
               {project.name}
             </h3>
