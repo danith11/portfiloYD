@@ -4,7 +4,9 @@ import BlurCircle from "./BlurCircle";
 import TechStack from "./TechStack";
 import Projects from "./Projects";
 import Footer from "./Footer";
-import boyimage from "/src/assets/boy.jpeg"
+import boyimage from "/src/assets/boy.jpeg";
+import { motion } from "framer-motion";
+
 // import resume from "../public/myCV.pdf"
 
 const Home = () => {
@@ -13,7 +15,12 @@ const Home = () => {
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-10 md:px-16 pt-28 md:pt-36">
         <BlurCircle top="150px" left="100px" />
 
-        <div className="lg:flex-1 px-2 sm:px-0">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="lg:flex-1 px-2 sm:px-0"
+        >
           <p className="text-4xl md:text-6xl font-medium mb-5">
             Full-Stack / Web Developer
           </p>
@@ -44,18 +51,25 @@ const Home = () => {
               My Projects
             </button>
             <button className="py-3 px-6 bg-slate-800 rounded-xl text-slate-200 cursor-pointer hover:scale-102 duration-200 hover:text-slate-50">
-              <a href="/myCV.pdf" download="Yethum Danith CV">Download CV</a>
+              <a href="/myCV.pdf" download="Yethum Danith CV">
+                Download CV
+              </a>
             </button>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="lg:flex-1 flex justify-center items-center">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="lg:flex-1 flex justify-center items-center"
+        >
           <img
             src={boyimage}
             alt="boy"
             className="rounded-full w-72 h-72 md:w-80 md:h-80 object-cover shadow-lg"
           />
-        </div>
+        </motion.div>
       </div>
       <TechStack />
       <Projects />

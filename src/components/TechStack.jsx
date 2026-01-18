@@ -10,6 +10,7 @@ import python from "../assets/python.png";
 import tailwind from "../assets/tailwind.png";
 import ts from "../assets/typescript.png";
 import mongo from "../assets/mongodb.png";
+import { motion } from "framer-motion";
 
 const TechStack = () => {
   const images = [
@@ -26,7 +27,12 @@ const TechStack = () => {
   ];
 
   return (
-    <div className="px-20 mt-30 mb-20">
+    <motion.div
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="px-20 mt-30 mb-20"
+    >
       <div className="flex flex-col justify-center items-center">
         <p className="font-bold text-4xl">Tech Stack</p>
         <div className="flex flex-wrap gap-10 mt-10">
@@ -40,7 +46,7 @@ const TechStack = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
