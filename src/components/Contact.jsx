@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaKaggle } from "react-icons/fa";
 import BlurCircle from "./BlurCircle";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const form = useRef();
@@ -19,7 +20,7 @@ const Contact = () => {
         form.current,
         {
           publicKey: import.meta.env.VITE_PUBLIC_KEY,
-        }
+        },
       )
       .then(
         () => {
@@ -27,7 +28,7 @@ const Contact = () => {
         },
         (error) => {
           console.log("FAILED...", error.text);
-        }
+        },
       );
     // console.log(import.meta.env.VITE_SERVICE_ID);
     // console.log(import.meta.env.VITE_TEMPLATE_ID);
@@ -37,7 +38,13 @@ const Contact = () => {
     <>
       <div className="px-5 md:px-30 sm:px-50 py-20 ">
         <BlurCircle top="100px" right="100px" />
-        <div className="flex flex-col items-center justify-center text-center">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center text-center"
+        >
           <MdLocalPostOffice className="w-20 h-20" color="#1e293b" />
           <p className="text-2xl font-bold">Get In Touch</p>
           <div className="w-20 border-2 mt-5"></div>
@@ -45,8 +52,14 @@ const Contact = () => {
             Have a project in mind or just want to say hello? Feel free to reach
             out!
           </p>
-        </div>
-        <div className="flex flex-col md:flex-row mt-15 items-center justify-center">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="flex flex-col md:flex-row mt-15 items-center justify-center"
+        >
           <div className="w-full md:w-1/2 bg-white p-5 rounded-lg hover:shadow-2xl ">
             <form
               ref={form}
@@ -168,7 +181,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
