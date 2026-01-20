@@ -48,7 +48,7 @@ const Home = () => {
 
           <div className="flex flex-row gap-4 my-5 items-center justify-center">
             <button className="py-3 px-6 bg-slate-800 rounded-xl text-slate-200 cursor-pointer hover:scale-102 duration-200 hover:text-slate-50">
-              My Projects
+              <a href="/projects">My Projects</a>
             </button>
             <button className="py-3 px-6 bg-slate-800 rounded-xl text-slate-200 cursor-pointer hover:scale-102 duration-200 hover:text-slate-50">
               <a href="/myCV.pdf" download="Yethum Danith CV">
