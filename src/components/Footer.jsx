@@ -21,6 +21,7 @@ const Footer = () => {
             <a
               className="flex flex-row items-center gap-2 cursor-pointer"
               href="mailto:yethumdanith2002@gmail.com"
+              target="blank"
             >
               {" "}
               <BiLogoGmail />
