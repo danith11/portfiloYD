@@ -17,11 +17,17 @@ const Footer = () => {
       >
         <div>
           <p className="text-2xl font-bold">Get In Touch</p>
-          <div className="flex flex-row gap-2 mt-5">
-            {" "}
-            <BiLogoGmail />
-            <p className="font-light">yethumdanith2002@gmail.com</p>
+          <div className="mt-5">
+            <a
+              className="flex flex-row items-center gap-2 cursor-pointer"
+              href="mailto:yethumdanith2002@gmail.com"
+            >
+              {" "}
+              <BiLogoGmail />
+              <p className="font-light">yethumdanith2002@gmail.com</p>
+            </a>
           </div>
+
           <p className="font-light">
             Feel free to reach out for collaborations or just a friendly hello
           </p>
